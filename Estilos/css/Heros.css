@@ -1,0 +1,79 @@
+/*Estilo logo*/
+
+body {
+    height: 100vh;
+    background-color: #303030;
+    
+    justify-content: center;
+}
+
+
+
+
+/*CSS GRID
+--------------------------------*/
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-row-gap: 30px;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 100%;
+    
+    
+}
+
+
+
+.card {
+    position: relative;
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    clip-path: polygon(90% 0, 100% 7%, 100% 100%, 0 100%, 0 0);
+}
+
+.card:hover {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.card img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50;
+    left: 50;
+    transform: translate(-50%, -50%) scale(1.1)
+    transition inherit;
+}
+
+.card:hover img {
+    transform:  translate(-50%, -50%) scale(center);
+}
+
+.card span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #061c25;
+    padding: 10px 20px;
+    color: #F4CF8B;
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    font-size: 20px;
+    transition: inherit;
+    
+}
+
+.card:hover span {
+    padding: 10px 30px;
+    background: #006680;
+}
